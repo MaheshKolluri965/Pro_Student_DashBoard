@@ -1,0 +1,49 @@
+1. Node JS 
+    - version - 16.10.0
+    - to change version cmd's are -> nvm install v16.10.0 and nvm use 16.10.0
+    cmd: node -v, 
+    
+2. NPM :- Node Package manager
+    - version
+
+    cmd:- npm -v, 
+    
+3. Angular
+    - Version - 13
+
+    cmd: npm -g @angular/cli (npm -g @angular/cli@13)
+
+4. VSCode
+    - Version: 1.77.3
+
+5. PostMan
+
+6. My SQL:-
+    - version 8.0
+
+    cmd:- show databases;
+          use dbname;
+          show tables;
+
+7. spring boot:-
+    - version - 3.0.6
+
+8. STS:-
+    - version - 4.18.0
+
+9. Boot Strap and JQuery:-
+    - npm install bootstrap jquery
+
+    - to check version -> package.json
+    - "bootstrap": "^5.2.3",
+    - "jquery": "^3.6.4", 
+
+    - add the below lines in angular.json file
+    "styles": [
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+    "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]

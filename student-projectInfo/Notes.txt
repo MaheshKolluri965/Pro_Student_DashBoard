@@ -1,0 +1,67 @@
+1. Node Js:- 
+    - it actsa as a mediator between angular and our browser.
+    - since browsers can understand only 'js' but in angular we will 'ts'. so node JS 
+      is used to convert the typescript into javascript. so that browser can understand angular.
+
+    NPM:- 
+      - NPM is basically a node package manager which is responsible for managing all the packages 
+        required by node.
+
+2. STS:-
+        project home	-> Contains the pom.xml and all subdirectories.
+        src/main/java	-> Contains the deliverable Java sourcecode for the project.
+        src/main/resources ->	Contains the deliverable resources for the project, such as property files.
+        src/test/java	-> Contains the testing Java sourcecode (JUnit or Testing test cases, for example) for the project.
+        src/test/resources ->	Contains resources necessary for testing.
+
+3. Dependencies:-
+        Add the dependencies in pom.xml file:-
+          - 1. mysql-connector-java: Is a MySQL driver.
+          - 2. spring-boot-starte-jpa: Is used to connect spring application with relational database efficiently.
+
+steps:-
+1. Annotations:-
+    - @Entity				// acts a table in the DB and class in the java perspective.
+    - @Id				// it is a id of this table
+	  - @GeneratedValue(strategy = GenerationType.AUTO)		// For AutoGeneration of the values
+    - @RestController 		// for making rest api calls
+    - @RequestBody - Take data from the body of the request
+    - @PostMapping // Sends the data from the body
+    --> Service Layer - Interacts with the repository i.e DB
+    - @Service // spring get to know that it is a service class
+    --> CrudRepository - it is an interface that have all the operations which are necessary for MySQL DB
+	  - @Autowired   // for autowiring
+
+    Note:- Model --> Controller --> Service --> Repository (DB communication)
+
+2. Properties file:
+    server.port=9090
+    spring.datasource.url=jdbc:mysql://localhost:3307/student
+    spring.datasource.username=root
+    spring.datasource.password=root
+    spring.datasource.platform=mysql
+    spring.jpa.hibernate.ddl-auto=create    #will create all the db tables automatically
+
+3. MySQL client:-
+    - create database studentdashboard;
+    - use studentdashboard;
+    - show tables;
+    - SHOW VARIABLES WHERE variable_name = 'port';
+    - select * from student;
+
+
+4. we are using template driven form in this project.
+
+5. services in Angular:-
+    - collection of methods which returns the http calls and by using those calls we can hit the rest endpoint.
+    eg: ng g s Student
+
+6. Create.
+
+7. Get:For getstudent details we need to take the reponse in an variable_name(studentDetails) and need to bind it with frontend table.
+
+8. Delete.@RequestParam will try to find the id in url
+
+9. Service --> .html --> .ts
+
+10. Must be same in spring and angular --> variable names, url paths
